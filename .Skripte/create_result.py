@@ -1,4 +1,5 @@
 import os
+import env
 
 def extract_headings_from_markdown(file_path):
     headings = []
@@ -40,8 +41,8 @@ def find_content_under_heading(file_path, heading):
 
 
 if __name__ == "__main__":
-    BASE_PATH: str = ""#TODO in env
-    CONFIG_PATH = BASE_PATH + "/Configs"
+    config = env.get_config()
+    CONFIG_PATH = config["PATHS"]["BASE"] + "/Configs"
 
     for file in os.listdir(CONFIG_PATH):
         result = ""
@@ -50,12 +51,12 @@ if __name__ == "__main__":
         for h in headers:
             counter = h.count("#")
             file_name = h.split("# ")[1]
-            content = find_content_under_heading(BASE_PATH+"/Zettel/"+file_name+".md", "Inhalt")
+            content = find_content_under_heading(config["PATHS"]["BASE"]+"/Zettel/"+file_name+".md", "Inhalt")
             result = result + h + "\n"
             if len(content) > 0:
                 for x in content:
                     row_end = "\n" if not x.endswith("\n") else ""
                     result = result + x + row_end
 
-        with open(BASE_PATH+"/Results/"+file, "w", encoding='utf-8') as file:
+        with open(config["PATHS"]["BASE"]+"/Results/"+file, "w", encoding='utf-8') as file:
             file.write(result)

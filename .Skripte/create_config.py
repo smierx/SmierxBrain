@@ -1,8 +1,7 @@
-import json
-
 import yaml
 import os
 import time
+import env
 
 def find_content_under_heading(file_path, heading):
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -130,26 +129,27 @@ def create_flat_list_for_roots(nested_data, root_names):
 
 
 if __name__ == "__main__":
-    BASE_PATH: str = ""#TODO in env
-    directory = BASE_PATH+"/Zettel/"
-    for x in os.listdir(BASE_PATH+"/MoC"):
-        tmp_moc = x.split(".md")[0]
-        example = find_content_under_heading(BASE_PATH+"/MoC/"+tmp_moc+".md","Inhaltsverzeichnis")
-        nested_data = build_tree(directory)
+    config = env.get_config()
+    directory = config["PATHS"]["BASE"]+"/Zettel/"
+    for x in os.listdir(config["PATHS"]["BASE"]+"/MoC"):
+        if x != ".gitkeep":
+            tmp_moc = x.split(".md")[0]
+            example = find_content_under_heading(config["PATHS"]["BASE"]+"/MoC/"+tmp_moc+".md","Inhaltsverzeichnis")
+            nested_data = build_tree(directory)
 
-        flat_list = create_flat_list_for_roots(nested_data,example)
+            flat_list = create_flat_list_for_roots(nested_data,example)
 
-        name = tmp_moc
+            name = tmp_moc
 
-        if os.path.exists(BASE_PATH + "/Configs/"+tmp_moc+".md"):
-            tmp_metadata = read_metadata_from_markdown(BASE_PATH + "/Configs/"+tmp_moc+".md")
-            if not tmp_metadata.get("rewrite"):
-                name = "TestMoc" + str(int(time.time()))
+            if os.path.exists(config["PATHS"]["BASE"] + "/Configs/"+tmp_moc+".md"):
+                tmp_metadata = read_metadata_from_markdown(config["PATHS"]["BASE"] + "/Configs/"+tmp_moc+".md")
+                if not tmp_metadata.get("rewrite"):
+                    name = "TestMoc" + str(int(time.time()))
 
-        with open(BASE_PATH + "/Configs/"+name+".md", "w") as file:
-            file.write("---\n")
-            file.write("rewrite: true\n")
-            file.write("---\n")
-            for line in flat_list:
-                file.write(line)
-                file.write("\n")
+            with open(config["PATHS"]["BASE"] + "/Configs/"+name+".md", "w") as file:
+                file.write("---\n")
+                file.write("rewrite: true\n")
+                file.write("---\n")
+                for line in flat_list:
+                    file.write(line)
+                    file.write("\n")
