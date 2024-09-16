@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Zettel.md",
+                "file": "Configs/QMK.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Templates/Zettel.md",
+                "file": "Configs/QMK.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Templates/Zettel.md",
+                "file": "Configs/QMK.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Templates/Zettel.md"
+                "file": "Configs/QMK.md"
               }
             }
           }
@@ -145,14 +145,26 @@
       "daily-notes:Heutige Notiz öffnen": false,
       "templates:Vorlage einfügen": false,
       "command-palette:Befehlspalette öffnen": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "f8b4f2b46d9e1a07",
   "lastOpenFiles": [
-    "Templates/MoC.md",
-    "Templates/Zettel.md",
+    "Configs/Bachelorarbeit.md",
+    "Configs/QMK.md",
+    "MoC/Zeiterfassung.md",
+    "MoC/Language Learning.md",
+    "MoC/Elixir.md",
+    "MoC/Chinesisch.md",
+    "Unbenannt",
+    "MoC/QMK.md",
     "MoC/Bachelorarbeit.md",
+    "Templates/MoC.md",
+    "README.md",
+    "Zeichnungen/README 2024-09-16 19.35.38.excalidraw.md",
+    "Zeichnungen",
+    "Templates/Zettel.md",
     "bla.md",
     "MoC/Studium.md",
     "Results/TestMoc.md",
@@ -169,16 +181,7 @@
     "Zettel/Thema1.1.md",
     "Templates",
     "images",
-    "Zettel/Thema2.md",
     "images/Pasted image 20240916170000.png",
-    "Zettel/Thema2.1.1.md",
-    "Zettel/Thema2.1.md",
-    "Zettel/Thema1.1.1.md",
-    "Zettel/Thema1.1.1.1.1.md",
-    "Zettel/Thema1.1.1.1.md",
-    "Configs/TestMoc.md.md",
-    "Configs/TestMoc1726427061.md",
-    "Configs/TestMoc1726427036.md",
     "Configs",
     "Results",
     "MoC",
