@@ -34,7 +34,7 @@ def read_metadata_from_markdown(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         lines = file.readlines()
 
-    if lines[0].strip() == '---':
+    if len(lines) > 0 and lines[0].strip() == '---':
         yaml_block = []
         for line in lines[1:]:
             if line.strip() == '---':
