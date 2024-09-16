@@ -1,0 +1,8 @@
+{
+  "tw_bin": "/opt/homebrew/Cellar/task/3.1.0/bin/task",
+  "debug_log": false,
+  "cache_columns": true,
+  "delete_key": "Alt",
+  "right_click_context_menu_enabled": false,
+  "right_click_context_menu_actions": []
+}
