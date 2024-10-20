@@ -3,7 +3,8 @@ parent:
 order: 1000
 ---
 # Inhalt
-
+Streamdeck muss ich noch für Skripte usw. einrichten
+Wacom Tablet
 # Dataview
 ```dataview 
 table without id

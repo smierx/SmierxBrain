@@ -1,5 +1,5 @@
 {
-  "tw_bin": "/opt/homebrew/Cellar/task/3.1.0/bin/task",
+  "tw_bin": "/usr/local/bin/task",
   "debug_log": false,
   "cache_columns": true,
   "delete_key": "Alt",
