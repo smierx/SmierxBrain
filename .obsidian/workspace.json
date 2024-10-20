@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Configs/Bachelorarbeit.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Bachelorarbeit"
             }
           }
         ]
@@ -178,12 +178,20 @@
   },
   "active": "f8b4f2b46d9e1a07",
   "lastOpenFiles": [
-    "Zeichnungen/README 2024-10-20 12.03.55.excalidraw.md",
-    "README.md",
-    "Akademisches Notizbuch.md",
-    "Zettel/Taskwarrior.md",
+    "Bilder/Pasted image 20241002080001.png",
+    "Configs/Bachelorarbeit.md",
+    "Configs/QMK.md",
     "MoC/Workflow.md",
+    "MoC/0000_Privat.md",
+    "MoC/Bachelorarbeit.md",
     "MoC/Zeiterfassung.md",
+    "Templates/MoC.md",
+    "Zeichnungen/Planung Elixir 2024-09-24 20.23.59.excalidraw.md",
+    "Akademisches Notizbuch.md",
+    "Zettel/Begleittext Data Engineering.md",
+    "README.md",
+    "Zeichnungen/README 2024-10-20 12.03.55.excalidraw.md",
+    "Zettel/Taskwarrior.md",
     "MoC/Einführung Data Science.md",
     "MoC/0100_Studium.md",
     "MoC/Data Engineering für Data Science.md",
@@ -193,23 +201,14 @@
     "PDFs",
     "PDFs/Einführung Data Science/2_Aufbau und Struktur.pdf",
     "PDFs/Einführung Data Science/ws2425_kursuebersicht.pdf",
-    "Bilder/Pasted image 20241002080001.png",
     "Zettel/Planung Elixir.md",
-    "Zeichnungen/Planung Elixir 2024-09-24 20.23.59.excalidraw.md",
     "MoC/Language Learning.md",
-    "MoC/0000_Privat.md",
     "MoC/0001_Projekt.md",
     "MoC/0002_Sprachen.md",
-    "MoC/Bachelorarbeit.md",
     "MoC/Chinesisch.md",
     "MoC/QMK.md",
     "Zeichnungen/Planung Elixir 2024-09-23 14.38.07.excalidraw.md",
     "Zeichnungen/Planung Elixir 2024-09-23 14.36.38.excalidraw.md",
-    "Zettel/Protokoll 17-22.09.24.md",
-    "Zettel/Begleittext Data Engineering.md",
-    "Zettel/Organisation Data Engineering für Data Science.md",
-    "Zettel/Linux.md",
-    "Zettel/Protokolle.md",
     "Unbenannt",
     "Zeichnungen",
     "Templates",
